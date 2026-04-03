@@ -176,12 +176,18 @@ body::before {
     transform: scale(1.05);
 }
 
+@keyframes textGlow {
+    0%, 100% { text-shadow: 0 0 2px rgba(14,165,233,0.2); }
+    50% { text-shadow: 0 0 15px rgba(14,165,233,0.8); }
+}
+
 .logo-text-symbol {
     font-size: 1.2rem;
     font-weight: 800;
     color: var(--primary);
     letter-spacing: 1px;
     z-index: 3;
+    animation: textGlow 2.5s ease-in-out infinite;
 }
 
 .logo-pulse {
@@ -251,6 +257,7 @@ body::before {
     line-height: 1.1;
     background: linear-gradient(to right, #fff, #94A3B8);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -333,12 +340,39 @@ body::before {
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
+    align-items: center;
+}
+
+@media (min-width: 900px) {
+    .about-container {
+        grid-template-columns: 1.3fr 1fr;
+    }
 }
 
 .about-text p {
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
     color: var(--text-muted);
+}
+
+.about-image {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    border: 1px solid var(--glass-border);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.about-image:hover img {
+    transform: scale(1.03);
 }
 
 .education-highlights {
@@ -554,6 +588,50 @@ body::before {
 
 .project-link:hover {
     color: var(--primary);
+    gap: 0.8rem;
+}
+
+/* Certifications Section */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.cert-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.8rem;
+}
+
+.cert-title {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+.cert-title i {
+    color: var(--primary);
+    margin-top: 0.2rem;
+}
+
+.cert-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+    margin-top: auto;
+}
+
+.cert-link:hover {
+    color: var(--secondary);
     gap: 0.8rem;
 }
 
