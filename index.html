@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashish Johnson | Data Analyst</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-content">
-            <div class="logo">AJ.</div>
+            <a href="#" class="logo-container" aria-label="Home">
+                <div class="logo-icon-wrapper">
+                    <div class="logo-pulse"></div>
+                    <span class="logo-text-symbol">AJ</span>
+                </div>
+            </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -33,29 +43,34 @@
         <div class="hero-content">
             <p class="greeting">Hi, I'm</p>
             <h1 class="name">Ashish Johnson</h1>
-            <h2 class="title">Data Analyst. Turning Data into Actionable Insights.</h2>
+            <h2 class="title">Data Analyst | Turning Data into Business Impact</h2>
             <p class="hero-desc">
-                I specialize in uncovering patterns, building predictive models, and visualizing data to drive strategic decisions.
+                I analyse complex datasets, build scalable data pipelines, and deliver insights that drive real business
+                decisions. With experience across e-commerce and machine learning projects, I focus on solving problems,
+                not just building dashboards.
             </p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn btn-primary">View Work</a>
+                <a href="INSERT_RESUME_LINK_HERE" target="_blank" class="btn btn-secondary"><i
+                        class="fa-solid fa-file-pdf"></i> View Resume</a>
                 <a href="#contact" class="btn btn-secondary">Contact Me</a>
             </div>
         </div>
         <div class="hero-graphic">
             <div class="glow-orb"></div>
-            <div class="glass-card abstract-stat">
+            <div class="glass-card abstract-stat" style="width: auto; min-width: 250px; padding-right: 2rem;">
                 <i class="fa-solid fa-chart-line"></i>
                 <div>
-                    <span>Data Processed</span>
-                    <strong>10M+ Rows</strong>
+                    <span>Records Analysed</span>
+                    <strong>4M+</strong>
                 </div>
             </div>
-            <div class="glass-card abstract-stat">
+            <div class="glass-card abstract-stat" style="width: auto; max-width: 350px; padding-right: 2rem;">
                 <i class="fa-solid fa-brain"></i>
                 <div>
-                    <span>Models Deployed</span>
-                    <strong>5+ Pipelines</strong>
+                    <span>Models & Pipelines</span>
+                    <strong style="font-size: 1.2rem; line-height: 1.3; display: block; margin-top: 0.2rem;">5+ ML
+                        Models & Data Pipelines</strong>
                 </div>
             </div>
         </div>
@@ -67,40 +82,43 @@
         <div class="about-container">
             <div class="about-text">
                 <p>
-                    I am a dedicated Data Analyst with over 1.5 years of international experience across diverse industries. I hold an MSc in Data and Decision Analytics from the University of Southampton, where I honed my skills in statistical modeling and machine learning.
+                    I’m a Data Analyst with 1.5+ years of international experience working with large-scale datasets in
+                    e-commerce and research environments. I hold an MSc in Data and Decision Analytics from the
+                    University of Southampton.
                 </p>
                 <p>
-                    My journey has taken me through challenging roles at leading organizations, allowing me to transform complex datasets into clear, actionable business strategies. I thrive on solving intricate problems and communicating insights effectively to stakeholders at all levels.
+                    My work focuses on data quality, analytics, and building systems that improve decision-making. I’ve
+                    worked on everything from structuring messy product data at scale to developing machine learning
+                    models on millions of records.
                 </p>
-                <div class="education-highlights">
-                    <h3>Education & Certifications</h3>
-                    <ul class="edu-list">
-                        <li><i class="fa-solid fa-graduation-cap"></i> <strong>MSc Data and Decision Analytics</strong>, University of Southampton</li>
-                        <li><i class="fa-solid fa-graduation-cap"></i> <strong>BA Degree</strong></li>
-                        <li><i class="fa-solid fa-certificate"></i> Active Learner (Coursera, Udemy)</li>
-                    </ul>
-                </div>
+                <p>
+                    I enjoy breaking down complex problems, finding patterns in data, and translating them into insights
+                    that actually matter to the business.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="assets/profile.png" alt="Ashish Johnson">
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="section reveal">
-        <h2 class="section-title">Technical Arsenal</h2>
+        <h2 class="section-title">Skills</h2>
         <div class="skills-grid">
             <div class="skill-category glass-card">
-                <h3><i class="fa-solid fa-code"></i> Programming</h3>
+                <h3><i class="fa-solid fa-code"></i> Programming & Data Analysis</h3>
                 <div class="skill-tags">
-                    <span class="tag">Python</span>
+                    <span class="tag">Python (Pandas, NumPy, Scikit-learn)</span>
                     <span class="tag">SQL</span>
                     <span class="tag">R</span>
                 </div>
             </div>
             <div class="skill-category glass-card">
-                <h3><i class="fa-solid fa-chart-pie"></i> Visualisation</h3>
+                <h3><i class="fa-solid fa-chart-pie"></i> Data Visualisation</h3>
                 <div class="skill-tags">
-                    <span class="tag">Tableau</span>
                     <span class="tag">Power BI</span>
+                    <span class="tag">Tableau</span>
                     <span class="tag">Matplotlib</span>
                     <span class="tag">Seaborn</span>
                 </div>
@@ -108,20 +126,21 @@
             <div class="skill-category glass-card">
                 <h3><i class="fa-solid fa-robot"></i> Machine Learning</h3>
                 <div class="skill-tags">
-                    <span class="tag">Scikit-Learn</span>
                     <span class="tag">Regression</span>
                     <span class="tag">Classification</span>
-                    <span class="tag">Clustering</span>
+                    <span class="tag">NLP</span>
+                    <span class="tag">Feature Engineering</span>
                     <span class="tag">XGBoost</span>
                 </div>
             </div>
             <div class="skill-category glass-card">
-                <h3><i class="fa-solid fa-toolbox"></i> Tools & Tech</h3>
+                <h3><i class="fa-solid fa-toolbox"></i> Tools & Technologies</h3>
                 <div class="skill-tags">
+                    <span class="tag">Excel (Advanced, VBA)</span>
                     <span class="tag">Git</span>
                     <span class="tag">Jupyter</span>
-                    <span class="tag">Excel (Advanced)</span>
-                    <span class="tag">AWS / Cloud basics</span>
+                    <span class="tag">REST APIs</span>
+                    <span class="tag">AWS (Basics)</span>
                 </div>
             </div>
         </div>
@@ -136,11 +155,33 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content glass-card">
                     <div class="timeline-header">
-                        <h3>Data Analyst</h3>
-                        <span class="company">Kingfisher plc</span>
+                        <h3>Product Description Data Acquisition Specialist</h3>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <img src="assets/Kingfisher_logo.jpg" alt="Kingfisher logo"
+                                style="height: 28px; width: auto; max-width: 140px; border-radius: 4px; background: white; padding: 2px; object-fit: contain;"
+                                onerror="this.style.display='none'">
+                            <span class="company">Kingfisher</span>
+                        </div>
                     </div>
-                    <span class="duration">Recent Role</span>
-                    <p>Analyzed large-scale customer and retail data. Developed reporting dashboards and contributed to cross-functional teams to improve operational efficiency and customer engagement.</p>
+                    <span class="duration">Aug 2024 – Jan 2026</span>
+                    <ul
+                        style="list-style: none; padding-left: 0; color: var(--text-muted); font-size: 0.95rem; display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem;">
+                        <li><i class="fa-solid fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>
+                            Managed end-to-end data onboarding for large-scale e-commerce product datasets across
+                            multiple regions.</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>
+                            Improved data quality and consistency by designing validation frameworks and structured
+                            templates.</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i> Acted
+                            as SME, collaborating with cross-functional teams to define data structures and workflows.
+                        </li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>
+                            Reduced operational inefficiencies by identifying root causes of data discrepancies and
+                            implementing system-level fixes.</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i> Built
+                            tracking and reporting systems using Excel and monday.com to ensure SLA adherence and timely
+                            delivery.</li>
+                    </ul>
                 </div>
             </div>
             <!-- Roke Manor -->
@@ -149,11 +190,125 @@
                 <div class="timeline-content glass-card">
                     <div class="timeline-header">
                         <h3>Data Analyst</h3>
-                        <span class="company">Roke Manor Research</span>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <img src="assets/roke.png" alt="Roke Manor logo"
+                                style="height: 28px; width: auto; max-width: 140px; border-radius: 4px; background: white; padding: 2px; object-fit: contain;"
+                                onerror="this.style.display='none'">
+                            <span class="company">Roke Manor Research</span>
+                        </div>
                     </div>
-                    <span class="duration">Previous Role</span>
-                    <p>Applied advanced analytical techniques to solve complex technical challenges. Worked on predictive modeling and robust data pipelines for research-driven projects.</p>
+                    <span class="duration">Jun 2023 – Sep 2023</span>
+                    <ul
+                        style="list-style: none; padding-left: 0; color: var(--text-muted); font-size: 0.95rem; display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem;">
+                        <li><i class="fa-solid fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i> Built
+                            a machine learning pipeline analysing 4M+ social media records to extract demographic
+                            insights.</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>
+                            Cleaned and processed unstructured data using Python (Pandas, NumPy, NLTK, regex).</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>
+                            Applied NLP techniques (TF-IDF, stemming) for feature engineering and model preparation.
+                        </li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>
+                            Trained and optimised models (XGBoost, Random Forest, SVM) achieving strong classification
+                            performance.</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary); margin-right: 0.5rem;"></i>
+                            Delivered actionable insights and model outputs for integration into BI workflows.</li>
+                    </ul>
+                    <a href="https://github.com/Ashish-Johnson/NLP--Machine-Learning-Analysis" target="_blank"
+                        class="project-link"
+                        style="display: inline-flex; margin-top: 1rem; font-size: 0.9rem; color: var(--primary);"><i
+                            class="fa-brands fa-github"></i> View Analysis Repo</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section reveal">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+            <!-- Southampton -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <h3 style="color: var(--text-main); font-size: 1.3rem; margin-bottom: 0.4rem;">MSc Data and Decision
+                        Analytics</h3>
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 0.8rem; gap: 0.5rem;">
+                        <div style="display: flex; align-items: center; gap: 0.6rem;">
+                            <img src="assets/UoS.png" alt="Southampton logo"
+                                style="height: 28px; width: auto; max-width: 140px; border-radius: 4px; background: white; padding: 2px; object-fit: contain;"
+                                onerror="this.style.display='none'">
+                            <span class="company" style="font-size: 1.05rem;">University of Southampton</span>
+                        </div>
+                        <span
+                            style="color: var(--primary); font-weight: 600; font-size: 0.85rem; background: rgba(14, 165, 233, 0.1); padding: 0.3rem 0.8rem; border-radius: 4px; border: 1px solid rgba(14,165,233,0.3);">Distinction</span>
+                    </div>
+                    <span class="duration">2022 - 2023</span>
+                    <ul
+                        style="list-style: none; padding-left: 0; color: var(--text-muted); font-size: 0.95rem; display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem;">
+                        <li><i class="fa-solid fa-book" style="color: var(--primary); margin-right: 0.5rem;"></i>
+                            <strong>Focus:</strong> Machine Learning, Forecasting, Optimisation, NLP
+                        </li>
+                        <li><i class="fa-solid fa-pen-nib" style="color: var(--primary); margin-right: 0.5rem;"></i>
+                            <strong>Dissertation:</strong> Extracting demographic insights from text data using ML and
+                            NLP
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Mumbai -->
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass-card">
+                    <h3 style="color: var(--text-main); font-size: 1.3rem; margin-bottom: 0.4rem;">BA Economics</h3>
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 0.8rem; gap: 0.5rem;">
+                        <div style="display: flex; align-items: center; gap: 0.6rem;">
+                            <img src="assets/xav.png" alt="St. Xavier's logo"
+                                style="height: 28px; width: auto; max-width: 140px; border-radius: 4px; background: white; padding: 2px; object-fit: contain;"
+                                onerror="this.style.display='none'">
+                            <span class="company" style="font-size: 1.05rem;">St. Xavier’s College, Mumbai</span>
+                        </div>
+                        <span
+                            style="color: var(--primary); font-weight: 600; font-size: 0.85rem; background: rgba(14, 165, 233, 0.1); padding: 0.3rem 0.8rem; border-radius: 4px; border: 1px solid rgba(14,165,233,0.3);">Distinction</span>
+                    </div>
+                    <span class="duration">2018 - 2021</span>
+                    <ul
+                        style="list-style: none; padding-left: 0; color: var(--text-muted); font-size: 0.95rem; display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem;">
+                        <li><i class="fa-solid fa-book" style="color: var(--primary); margin-right: 0.5rem;"></i>
+                            <strong>Focus:</strong> Econometrics, Statistical Analysis, Financial & Economic Modelling
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section reveal">
+        <h2 class="section-title">Certifications</h2>
+        <div class="cert-grid">
+            <div class="glass-card cert-card">
+                <h3 class="cert-title"><i class="fa-solid fa-certificate"></i> Udemy: Power BI</h3>
+                <a href="https://www.udemy.com/certificate/UC-39d4987b-ed7b-4a9d-af23-2a8a744fbed6/" target="_blank"
+                    class="cert-link">View Credential <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="glass-card cert-card">
+                <h3 class="cert-title"><i class="fa-solid fa-certificate"></i> Udemy: SQL</h3>
+                <a href="https://www.udemy.com/certificate/UC-446d7423-bd2b-4ea9-a7ce-5a357c324eae/" target="_blank"
+                    class="cert-link">View Credential <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="glass-card cert-card">
+                <h3 class="cert-title"><i class="fa-brands fa-google"></i> Google Data Analytics</h3>
+                <a href="https://drive.google.com/file/d/1gtsm90vjOAc7VGaLfsQOaPwj8VhmOXTw/view" target="_blank"
+                    class="cert-link">View Credential <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="glass-card cert-card">
+                <h3 class="cert-title"><i class="fa-solid fa-building-columns"></i> University of Mumbai: Data Analytics
+                </h3>
+                <a href="https://drive.google.com/file/d/1zGC7XmAwRKw4-feaUV8bjikSfcehmq20/view" target="_blank"
+                    class="cert-link">View Credential <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
@@ -165,33 +320,63 @@
             <!-- Project 1 -->
             <div class="project-card glass-card">
                 <div class="project-img-container">
-                    <img src="assets/netflix_data_viz_1774973240992.png" alt="Netflix Data Visualization" class="project-img">
+                    <img src="assets/netflix_data_viz_1774973240992.png" alt="Netflix Data Visualization"
+                        class="project-img">
                 </div>
                 <div class="project-info">
                     <h3>Netflix Data Analysis</h3>
-                    <p>Comprehensive exploratory data analysis (EDA) of Netflix's catalog. Identified content trends over time, geographical distribution of content, and genre correlations using Python and Tableau.</p>
+                    <ul
+                        style="list-style: none; padding-left: 0; color: var(--text-muted); font-size: 0.95rem; display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem;">
+                        <li><i class="fa-solid fa-caret-right" style="color: var(--primary); margin-right: 0.2rem;"></i>
+                            Analysed Netflix catalogue data using SQL (CTEs, joins, window functions) to uncover content
+                            trends.</li>
+                        <li><i class="fa-solid fa-caret-right" style="color: var(--primary); margin-right: 0.2rem;"></i>
+                            Identified a significant increase in content production post-2015 and shifts in genre
+                            distribution.</li>
+                        <li><i class="fa-solid fa-caret-right" style="color: var(--primary); margin-right: 0.2rem;"></i>
+                            Built an interactive Power BI dashboard to visualise trends by country, genre, and release
+                            patterns.</li>
+                        <li><i class="fa-solid fa-caret-right" style="color: var(--primary); margin-right: 0.2rem;"></i>
+                            Cleaned and transformed raw datasets to ensure accuracy and usability.</li>
+                    </ul>
                     <div class="project-tech">
-                        <span>Python</span>
-                        <span>Pandas</span>
-                        <span>Tableau</span>
+                        <span>SQL</span>
+                        <span>Power BI</span>
+                        <span>Data Cleaning</span>
                     </div>
-                    <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="project-links" style="display: flex; gap: 1.5rem; margin-top: auto;">
+                        <a href="https://github.com/Ashish-Johnson/Netflix-Analysis-Power-Bi" target="_blank"
+                            class="project-link"><i class="fa-brands fa-github"></i> Power BI</a>
+                        <a href="https://github.com/Ashish-Johnson/Netflix-Analysis-SQL" target="_blank"
+                            class="project-link"><i class="fa-brands fa-github"></i> SQL</a>
+                    </div>
                 </div>
             </div>
             <!-- Project 2 -->
             <div class="project-card glass-card">
                 <div class="project-img-container">
-                    <img src="assets/allstate_claim_viz_1774973261421.png" alt="Allstate Claim Severity" class="project-img">
+                    <img src="assets/allstate_claim_viz_1774973261421.png" alt="Allstate Claim Severity"
+                        class="project-img">
                 </div>
                 <div class="project-info">
                     <h3>Allstate Claim Severity Prediction</h3>
-                    <p>Developed a machine learning model to predict insurance claim severity (cost) for Allstate. Utilized gradient boosting techniques to handle a highly dimensional dataset and reduce MAE.</p>
+                    <ul
+                        style="list-style: none; padding-left: 0; color: var(--text-muted); font-size: 0.95rem; display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem;">
+                        <li><i class="fa-solid fa-caret-right" style="color: var(--primary); margin-right: 0.2rem;"></i>
+                            Built a regression model using Python and XGBoost to predict insurance claim severity.</li>
+                        <li><i class="fa-solid fa-caret-right" style="color: var(--primary); margin-right: 0.2rem;"></i>
+                            Processed 125,000+ records with extensive feature engineering and exploratory analysis.</li>
+                        <li><i class="fa-solid fa-caret-right" style="color: var(--primary); margin-right: 0.2rem;"></i>
+                            Improved model performance using cross-validation and hyperparameter tuning.</li>
+                        <li><i class="fa-solid fa-caret-right" style="color: var(--primary); margin-right: 0.2rem;"></i>
+                            Evaluated models using RMSE and R² while analysing feature importance.</li>
+                    </ul>
                     <div class="project-tech">
+                        <span>Python</span>
                         <span>XGBoost</span>
                         <span>Scikit-Learn</span>
-                        <span>Feature Engineering</span>
+                        <span>EDA</span>
                     </div>
-                    <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -201,17 +386,20 @@
     <section id="contact" class="section reveal">
         <div class="contact-box glass-card">
             <h2 class="section-title">Let's Connect</h2>
-            <p>I am currently open to new opportunities as a Data Analyst. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            <p>I’m currently open to Data Analyst roles where I can contribute to solving real business problems using
+                data.<br /><br />
+                Feel free to reach out for opportunities, collaborations, or just a conversation around data and
+                analytics.</p>
             <div class="contact-methods">
-                <a href="mailto:ashish.johnson@example.com" class="contact-item">
+                <a href="mailto:ashishjohnson.professional@gmail.com" class="contact-item">
                     <i class="fa-solid fa-envelope"></i>
                     <span>Email Me</span>
                 </a>
-                <a href="#" class="contact-item">
+                <a href="https://www.linkedin.com/in/ashishjohnson/" target="_blank" class="contact-item">
                     <i class="fa-brands fa-linkedin"></i>
                     <span>LinkedIn</span>
                 </a>
-                <a href="#" class="contact-item">
+                <a href="https://github.com/Ashish-Johnson" target="_blank" class="contact-item">
                     <i class="fa-brands fa-github"></i>
                     <span>GitHub</span>
                 </a>
@@ -222,9 +410,10 @@
     <!-- Footer -->
     <footer>
         <p>&copy; 2026 Ashish Johnson. All rights reserved.</p>
-        <p class="built-with">Built with <i class="fa-solid fa-heart"></i> and Data.</p>
+        <p class="built-with">Built with intent, caffeine, and questionable life decisions.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
