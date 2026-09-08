@@ -26,10 +26,10 @@ body.light-theme {
     --primary: #0284C7;
     --secondary: #0EA5E9;
     --text-main: #0F172A;
-    --text-muted: #475569;
+    --text-muted: #334155;
     
-    --glass-bg: rgba(255, 255, 255, 0.85);
-    --glass-border: rgba(203, 213, 225, 0.6);
+    --glass-bg: rgba(255, 255, 255, 0.9);
+    --glass-border: rgba(203, 213, 225, 0.8);
 }
 
 body.light-theme::before {
@@ -37,38 +37,38 @@ body.light-theme::before {
 }
 
 body.light-theme #navbar {
-    background: rgba(255, 255, 255, 0.85);
-    border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.9);
 }
 
 body.light-theme .name {
-    background: linear-gradient(to right, #0F172A, #334155);
+    background: linear-gradient(to right, #0F172A, #1E293B);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 body.light-theme .glass-card {
-    background: rgba(255, 255, 255, 0.85);
-    border: 1px solid rgba(203, 213, 225, 0.6);
-    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(203, 213, 225, 0.8);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
 }
 
 body.light-theme .glass-card:hover {
-    border-color: rgba(2, 132, 199, 0.4);
-    box-shadow: 0 15px 40px rgba(2, 132, 199, 0.12);
+    border-color: rgba(2, 132, 199, 0.5);
+    box-shadow: 0 15px 40px rgba(2, 132, 199, 0.15);
 }
 
 body.light-theme .glass-card::after {
-    background: radial-gradient(circle, rgba(2, 132, 199, 0.12) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(2, 132, 199, 0.15) 0%, transparent 70%);
 }
 
 body.light-theme .timeline::before {
-    background: rgba(203, 213, 225, 0.8);
+    background: rgba(203, 213, 225, 0.9);
 }
 
 body.light-theme .timeline-dot {
-    background: #F8FAFC;
+    background: #FFFFFF;
     border-color: #0284C7;
 }
 
@@ -78,7 +78,7 @@ body.light-theme .timeline-content h3 {
 
 body.light-theme .btn-secondary {
     color: #0F172A;
-    border-color: rgba(203, 213, 225, 0.8);
+    border-color: rgba(203, 213, 225, 0.9);
 }
 
 body.light-theme .btn-secondary:hover {
@@ -87,8 +87,8 @@ body.light-theme .btn-secondary:hover {
 }
 
 body.light-theme footer {
-    border-top: 1px solid rgba(203, 213, 225, 0.6);
-    color: #64748B;
+    border-top: 1px solid rgba(203, 213, 225, 0.8);
+    color: #475569;
 }
 
 .theme-toggle-btn {
