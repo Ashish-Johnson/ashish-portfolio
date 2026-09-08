@@ -830,11 +830,29 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 992px) {
+    #hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
     .hero-content {
         max-width: 100%;
     }
+    .cta-buttons {
+        justify-content: center;
+    }
     .hero-graphic {
-        display: none;
+        align-items: center;
+        margin-top: 2rem;
+        width: 100%;
+    }
+    #hero-3d-canvas-container {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 320px;
+        height: 320px;
+        margin: 0 auto;
     }
 }
 
